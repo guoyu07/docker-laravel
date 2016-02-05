@@ -6,6 +6,7 @@ EXPOSE 80
 RUN apt-get update && \
     apt-get install -qqy \
       libmcrypt-dev \
+      git-core \
       zlib1g-dev && \
     docker-php-ext-install \
       bcmath \
