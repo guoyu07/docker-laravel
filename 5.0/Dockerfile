@@ -3,6 +3,8 @@ MAINTAINER Chris McKenzie <chris.mckenzie@thecontrolgroup.com>
 
 EXPOSE 80
 
+RUN docker-php-ext-install pdo pdo_mysql mysqli
+
 RUN apt-get update && \
     apt-get install -qqy \
       libmcrypt-dev \
